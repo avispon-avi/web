@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.vercel
+*.log
+transcript_extract.txt
+transcript_extract_utf8.txt
+styles_backup.css
+restore.py

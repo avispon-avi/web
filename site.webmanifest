@@ -1,0 +1,21 @@
+{
+  "name": "Avispon Viz - Vision-Guided Autonomous Drones",
+  "short_name": "Avispon Viz",
+  "description": "Vision-Guided Autonomous Drones and Edge AI Nano UAVs for Real-World Indoor Missions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1628",
+  "theme_color": "#0a1628",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/company logo 1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

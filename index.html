@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Title & Meta Tags -->
+  <title>Avispon Viz | Vision-Guided Autonomous Drones & Nano UAVs</title>
+  <meta name="title" content="Avispon Viz | Vision-Guided Autonomous Drones & Nano UAVs">
+  <meta name="description" content="Avispon Viz (AvisponViz) - Pioneers in Vision-Guided Autonomous Drones, Nano UAV Platforms, Onboard Edge AI, and GPS-Denied Indoor Flight Technology based in Bengaluru, India.">
+  <meta name="keywords" content="Avispon Viz, AvisponViz, avispon viz, Avispon Viz drone, autonomous drones, nano UAV, edge AI, indoor navigation, vision-guided drones, GPS-denied drone, Ashwin Kumar, Mariya V Desingh, Rajesh M, Bengaluru drones, robotics, drone computer vision">
+  <meta name="author" content="Avispon Viz Team">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#0a1628">
+  <link rel="canonical" href="https://avispon-viz.vercel.app/">
+  <link rel="alternate" hreflang="en" href="https://avispon-viz.vercel.app/">
+  <link rel="alternate" hreflang="x-default" href="https://avispon-viz.vercel.app/">
+
+  <!-- Open Graph / Facebook / LinkedIn SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://avispon-viz.vercel.app/">
+  <meta property="og:site_name" content="Avispon Viz">
+  <meta property="og:title" content="Avispon Viz | Vision-Guided Autonomous Drones">
+  <meta property="og:description" content="Avispon Viz is building the future of indoor autonomy with vision-guided nano UAVs, onboard edge AI, and custom flight controller firmware.">
+  <meta property="og:image" content="https://avispon-viz.vercel.app/drone%20image%201.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Avispon Viz Vision-Guided Autonomous Nano UAV Prototype">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card SEO -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://avispon-viz.vercel.app/">
+  <meta name="twitter:title" content="Avispon Viz | Vision-Guided Autonomous Drones">
+  <meta name="twitter:description" content="Avispon Viz is building the future of indoor autonomy with vision-guided nano UAVs, onboard edge AI, and custom flight controller firmware.">
+  <meta name="twitter:image" content="https://avispon-viz.vercel.app/drone%20image%201.png">
+  <meta name="twitter:image:alt" content="Avispon Viz Nano UAV Prototype">
+
+  <!-- Geo & Regional Metadata -->
+  <meta name="geo.region" content="IN-KA">
+  <meta name="geo.placename" content="Bengaluru">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="company logo 1.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data / JSON-LD for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://avispon-viz.vercel.app/#organization",
+        "name": "Avispon Viz",
+        "alternateName": ["AvisponViz", "Avispon Drones", "Avispon Viz Autonomous Drones"],
+        "url": "https://avispon-viz.vercel.app/",
+        "logo": "https://avispon-viz.vercel.app/company%20logo%201.png",
+        "image": "https://avispon-viz.vercel.app/drone%20image%201.png",
+        "description": "Avispon Viz is an innovative startup and research project based in Bengaluru, India, building vision-guided autonomous nano-UAV drones and edge AI models for GPS-denied indoor environments.",
+        "email": "avispondrones@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Rajesh M",
+            "jobTitle": "Founder & System Integration"
+          },
+          {
+            "@type": "Person",
+            "name": "Mariya V Desingh",
+            "jobTitle": "Co-Founder & Model Training Specialist"
+          },
+          {
+            "@type": "Person",
+            "name": "Ashwin Kumar",
+            "jobTitle": "Project Lead & Edge AI Architect"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://avispon-viz.vercel.app/#website",
+        "url": "https://avispon-viz.vercel.app/",
+        "name": "Avispon Viz",
+        "alternateName": "Avispon Viz Official Website",
+        "publisher": {
+          "@id": "https://avispon-viz.vercel.app/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Product",
+        "name": "Avispon Viz Autonomous Nano UAV Prototype",
+        "brand": {
+          "@type": "Brand",
+          "name": "Avispon Viz"
+        },
+        "description": "Vision-guided autonomous drone with onboard computer vision, custom flight controller firmware, and peak 500 FPS inference speed.",
+        "image": "https://avispon-viz.vercel.app/drone%20image%201.png"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Background Particles -->
+  <div class="particles" id="particles">
+    <!-- Particles generated via JS -->
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <a href="#home" class="nav-logo">
+      <img src="company logo 1.png" alt="Avispon Viz Logo">
+    </a>
+    
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#what-we-build">What We Build</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact" class="btn nav-cta">Collaborate</a></li>
+    </ul>
+
+    <button class="close-mobile" id="close-mobile">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    
+    <div class="nav-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    
+    <div class="hero-container">
+      <div class="hero-content reveal-left">
+
+        
+        <h1 class="hero-title">Building Vision-Guided Autonomous Drones for Real-World Indoor Missions</h1>
+        
+        <p class="hero-subtitle">
+          Showcasing a working prototype of a nano-UAV capable of onboard vision and autonomous flight in constrained environments. We bring edge AI to the smallest platforms.
+        </p>
+        
+        <div class="hero-pills">
+          <div class="hero-pill">
+            <i class="fa-solid fa-microchip hero-pill-icon"></i> Edge Computing
+          </div>
+          <div class="hero-pill">
+            <i class="fa-solid fa-eye hero-pill-icon"></i> Onboard AI Vision
+          </div>
+          <div class="hero-pill">
+            <i class="fa-solid fa-plane-up hero-pill-icon"></i> Autonomous Flight
+          </div>
+        </div>
+        
+        <div class="hero-btns">
+          <a href="#what-we-build" class="btn btn-primary">See Our Work <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-outline">Discuss Your Project</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual reveal-right">
+        <div class="hero-drone-card">
+          <img src="drone image 1.png" alt="Avispon Viz Nano UAV Prototype">
+          <div class="hero-drone-overlay"></div>
+          <div class="hero-drone-label">
+            <h4>Avispon Viz Prototype V1</h4>
+            <p>Vision-equipped Nano-UAV</p>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section id="how-we-work">
+    <div class="section-wrapper reveal">
+      <div class="section-center">
+        <span class="section-label">Our Process</span>
+        <h2 class="section-title">How We <span>Work</span></h2>
+        <div class="divider divider-center"></div>
+      </div>
+      
+      <div class="how-we-work-container">
+        <div class="how-we-work-visual reveal-left">
+          <img src="drone image 3.png" alt="Avispon Viz Prototype 3">
+        </div>
+        
+        <div class="steps-container reveal-right">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Research & Design</h3>
+              <p>We analyze constraints and architect lightweight, efficient solutions for flight and AI.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Rapid Prototyping</h3>
+              <p>Building working hardware and software integration from flight controllers to edge AI models.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Collaborate & Scale</h3>
+              <p>Partnering with teams to integrate our tech or build custom autonomous products together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Are Building -->
+  <section id="what-we-build">
+    <div class="build-container">
+      <div class="build-visual reveal-left">
+        <div class="build-img-main">
+          <img src="work space.png" alt="Avispon Viz Workspace and Development">
+        </div>
+        <div class="build-img-secondary">
+          <img src="drone image 2.png" alt="Drone Close-up">
+        </div>
+      </div>
+      
+      <div class="build-content reveal-right">
+        <span class="section-label">Active Development</span>
+        <h2 class="section-title">What We Are <span>Building</span></h2>
+        <div class="divider"></div>
+        <p class="section-subtitle" style="margin-bottom: 2rem;">
+          This is the system we have built and are actively advancing. A complete, end-to-end vision drone ecosystem optimized for constrained environments.
+        </p>
+        
+        <div class="build-specs">
+          <div class="spec-card">
+            <i class="fa-solid fa-compress spec-icon" style="color: #00e5ff;"></i>
+            <h4>Nano-UAV Platform</h4>
+            <p>Developing a vision-guided autonomous nano-UAV specifically for indoor navigation without GPS.</p>
+          </div>
+          <div class="spec-card">
+            <i class="fa-solid fa-camera spec-icon" style="color: #42a5f5;"></i>
+            <h4>Real-Time Vision</h4>
+            <p>Integrating onboard camera with a lightweight custom CNN for rapid, real-time decision making.</p>
+          </div>
+          <div class="spec-card">
+            <i class="fa-solid fa-bolt spec-icon" style="color: #1e88e5;"></i>
+            <h4>Extreme Edge AI</h4>
+            <p>Running inference at high speed (≈500 FPS peak) with a remarkably small model footprint (≈25 KB).</p>
+          </div>
+          <div class="spec-card">
+            <i class="fa-solid fa-layer-group spec-icon" style="color: #1565c0;"></i>
+            <h4>Complete System</h4>
+            <p>Building flight controller firmware, vision modules, and ground-station interfaces from scratch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications & Use Cases -->
+  <section id="applications">
+    <div class="section-wrapper reveal">
+      <div class="section-center">
+        <span class="section-label">Use Cases</span>
+        <h2 class="section-title">Practical <span>Applications</span></h2>
+        <div class="divider divider-center"></div>
+        <p class="section-subtitle" style="margin: 0 auto 3rem;">
+          Where our technology can be applied to help you build your own autonomous products.
+        </p>
+        <div class="apps-visual">
+          <img src="practical.png" alt="Practical Applications of Nano UAVs">
+        </div>
+      </div>
+      
+      <div class="apps-grid">
+        <div class="app-card">
+          <div class="app-icon-wrap" style="background: rgba(0,229,255,0.1); color: var(--cyan);">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3>Indoor Inspection</h3>
+          <p>Perfect for factories, warehouses, power plants, and confined industrial spaces where GPS signals are unavailable but visual navigation is essential.</p>
+          <span class="app-tag" style="background: rgba(0,229,255,0.1); color: var(--cyan);">Industrial</span>
+        </div>
+        
+        <div class="app-card">
+          <div class="app-icon-wrap" style="background: rgba(66,165,245,0.1); color: #42a5f5;">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <h3>Search & Reconnaissance</h3>
+          <p>Enables quick visual search inside buildings or complex GPS-denied environments, providing critical situational awareness instantly.</p>
+          <span class="app-tag" style="background: rgba(66,165,245,0.1); color: #42a5f5;">Security</span>
+        </div>
+        
+        <div class="app-card">
+          <div class="app-icon-wrap" style="background: rgba(30,136,229,0.1); color: #1e88e5;">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Monitoring & Surveillance</h3>
+          <p>Time-sensitive visual monitoring in restricted or indoor areas, capturing and processing data locally without relying on external servers.</p>
+          <span class="app-tag" style="background: rgba(30,136,229,0.1); color: #1e88e5;">Surveillance</span>
+        </div>
+        
+        <div class="app-card">
+          <div class="app-icon-wrap" style="background: rgba(21,101,192,0.1); color: #1565c0;">
+            <i class="fa-solid fa-drone"></i>
+          </div>
+          <h3>Custom Autonomous Solutions</h3>
+          <p>Ideal for companies looking to add onboard vision and autonomous capabilities to their own small drone fleets or robotic platforms.</p>
+          <span class="app-tag" style="background: rgba(21,101,192,0.1); color: #1565c0;">Integration</span>
+        </div>
+        
+        <div class="app-card">
+          <div class="app-icon-wrap" style="background: rgba(13,33,71,0.5); color: #fff;">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3>Edge-AI Integration</h3>
+          <p>For teams that need lightweight, highly-optimized, real-time AI models running directly on the hardware with minimal power consumption.</p>
+          <span class="app-tag" style="background: rgba(13,33,71,0.5); color: #fff;">Technology</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Capabilities -->
+  <section id="capabilities">
+    <div class="capabilities-container">
+      <div class="capabilities-content reveal-left">
+        <span class="section-label">Technical Strengths</span>
+        <h2 class="section-title">Our <span>Capabilities</span></h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">
+          What we offer to clients and partners looking to push the boundaries of small-scale autonomy.
+        </p>
+        
+        <ul class="capability-list">
+          <li class="capability-item">
+            <div class="capability-check"><i class="fa-solid fa-code"></i></div>
+            <div class="capability-text">
+              <h4>Custom Firmware Development</h4>
+              <p>Tailored flight controller programming for stable, autonomous operations.</p>
+            </div>
+          </li>
+          <li class="capability-item">
+            <div class="capability-check"><i class="fa-solid fa-brain"></i></div>
+            <div class="capability-text">
+              <h4>Edge-AI Model Design</h4>
+              <p>Designing, training, and deploying ultra-lightweight onboard vision models.</p>
+            </div>
+          </li>
+          <li class="capability-item">
+            <div class="capability-check"><i class="fa-solid fa-satellite-dish"></i></div>
+            <div class="capability-text">
+              <h4>Sensor Integration</h4>
+              <p>Seamless blending of optical and physical sensors for indoor positioning and altitude hold.</p>
+            </div>
+          </li>
+          <li class="capability-item">
+            <div class="capability-check"><i class="fa-solid fa-cubes"></i></div>
+            <div class="capability-text">
+              <h4>End-to-End Prototyping</h4>
+              <p>Delivering complete solutions: hardware setup, software stack, and ground station UI.</p>
+            </div>
+          </li>
+          <li class="capability-item">
+            <div class="capability-check"><i class="fa-solid fa-rocket"></i></div>
+            <div class="capability-text">
+              <h4>Concept to Flight</h4>
+              <p>Proven experience taking a nano-drone from basic manual flight to camera-assisted autonomy.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="capabilities-visual reveal-right">
+        <img src="drone image 1.png" alt="Capabilities and Technical Hardware">
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team">
+    <div class="section-wrapper reveal">
+      <div class="section-center">
+        <span class="section-label">The Creators</span>
+        <h2 class="section-title">Meet the <span>Team</span></h2>
+        <div class="divider divider-center"></div>
+      </div>
+      
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">RM</div>
+          <h3>Rajesh M</h3>
+          <div class="team-role">System Integration</div>
+          <p>Develops ground-station software and implements advanced computer vision pipelines.</p>
+        </div>
+        
+        <div class="team-card">
+          <div class="team-avatar">MD</div>
+          <h3>Mariya V Desingh</h3>
+          <div class="team-role">Model Training</div>
+          <p>Handles dataset curation and optimizes AI models for maximum accuracy on limited hardware.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">AK</div>
+          <h3>Ashwin Kumar</h3>
+          <div class="team-role">Project Lead</div>
+          <p>Spearheads firmware architecture and edge-AI integration, ensuring robust system performance.</p>
+        </div>
+      </div>
+      
+      <div class="team-photo-section">
+        <img src="team pic.png" alt="Avispon Viz Team Photo">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Collaborate -->
+  <section id="contact">
+    <div class="contact-container reveal">
+      <div class="contact-info" style="text-align: center;">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Let's <span>Collaborate</span></h2>
+        <div class="divider divider-center"></div>
+        <p style="max-width: 600px; margin: 0 auto 3rem;">
+          We are open to collaboration, guidance, and working with teams who want to build autonomous drone products. If you're interested in professional lab exposure or joint development, reach out to us.
+        </p>
+        
+        <div class="contact-details-grid">
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email Us At</h4>
+              <p>avispondrones@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <h4>Project Lead</h4>
+              <p>Ashwin Kumar</p>
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Bengaluru, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <img src="company logo 1.png" alt="Avispon Viz Logo">
+          </a>
+          <p>Building the future of indoor autonomy. We integrate edge AI and vision on nano-UAV platforms for real-world applications.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what-we-build">What We Build</a></li>
+            <li><a href="#applications">Use Cases</a></li>
+            <li><a href="#team">Our Team</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:avispondrones@gmail.com">Email Us</a></li>
+            <li><a href="#contact">Collaborate</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Avispon Viz. All rights reserved.</p>
+        <p>Built for <span>Innovation</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Navigation Scroll Effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const closeMobile = document.getElementById('close-mobile');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    hamburger.addEventListener('click', () => {
+      navbar.classList.add('mobile-open');
+    });
+
+    closeMobile.addEventListener('click', () => {
+      navbar.classList.remove('mobile-open');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navbar.classList.remove('mobile-open');
+      });
+    });
+
+    // Scroll Reveal Animation
+    const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const revealOptions = {
+      threshold: 0.15,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, revealOptions);
+
+    reveals.forEach(reveal => {
+      revealOnScroll.observe(reveal);
+    });
+
+    // Generate Background Particles
+    const particlesContainer = document.getElementById('particles');
+    const particleCount = 20;
+
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
+      
+      // Random properties
+      const size = Math.random() * 4 + 1;
+      const left = Math.random() * 100;
+      const duration = Math.random() * 10 + 10;
+      const delay = Math.random() * 10;
+      
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
+      particle.style.left = `${left}%`;
+      particle.style.animationDuration = `${duration}s`;
+      particle.style.animationDelay = `${delay}s`;
+      
+      particlesContainer.appendChild(particle);
+    }
+  </script>
+</body>
+</html>
