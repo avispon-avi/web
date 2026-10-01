@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Drone Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Split Layout preserving drone's exact position -->
+  <main class="app-container">
+    <section class="left-panel"></section>
+    <section class="right-panel">
+      <div id="canvas-container"></div>
+    </section>
+  </main>
+
+  <!-- Required 3D Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  
+  <!-- Drone 3D Data & Reusable Viewer Module -->
+  <script src="droneData.js"></script>
+  <script src="DroneViewer.js"></script>
+  
+  <!-- App Initialization -->
+  <script src="app.js"></script>
+</body>
+</html>
