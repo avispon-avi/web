@@ -651,9 +651,9 @@
 
   <!-- App 3D Initialization -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    function startDroneViewer() {
       const canvasContainer = document.getElementById('canvas-container');
-      if (canvasContainer && typeof DroneViewer !== 'undefined') {
+      if (canvasContainer && typeof DroneViewer !== 'undefined' && !window.droneViewerInstance) {
         window.droneViewerInstance = new DroneViewer({
           container: 'canvas-container',
           rotationSpeed: 0.1,
@@ -664,7 +664,13 @@
           cameraPos: { x: 5.1, y: 2.5, z: 9.5 }
         });
       }
-    });
+    }
+
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      startDroneViewer();
+    } else {
+      document.addEventListener('DOMContentLoaded', startDroneViewer);
+    }
   </script>
 </body>
 

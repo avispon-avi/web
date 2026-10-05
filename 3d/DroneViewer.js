@@ -177,6 +177,8 @@ class DroneViewer {
             this.options.onLoaded();
           }
 
+          // Reset clock so delta is zeroed out for render loop
+          this.clock.start();
           // Start Render Loop
           this.animate();
         }, (err) => console.error('DroneViewer: Error parsing GLTF:', err));
@@ -187,7 +189,7 @@ class DroneViewer {
   animate() {
     this.animationFrameId = requestAnimationFrame(() => this.animate());
 
-    const delta = this.clock.getDelta();
+    const delta = Math.min(this.clock.getDelta(), 0.1); // Cap delta to prevent jump
     const elapsedTime = this.clock.getElapsedTime();
 
     if (this.pivotGroup) {
@@ -213,6 +215,11 @@ class DroneViewer {
         this.pivotGroup.position.y = startY * (1 - easeT) + targetY * easeT;
         this.pivotGroup.position.z = startZ * (1 - easeT) + this.options.position.z * easeT;
       } else {
+        // Ensure scale and position are locked to target values
+        this.pivotGroup.scale.set(this.targetScale, this.targetScale, this.targetScale);
+        this.pivotGroup.position.x = this.options.position.x;
+        this.pivotGroup.position.z = this.options.position.z;
+
         // 1. Slow left-to-right Y rotation
         if (this.options.rotationSpeed) {
           this.pivotGroup.rotation.y += delta * this.options.rotationSpeed;
